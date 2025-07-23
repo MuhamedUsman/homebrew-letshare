@@ -14,12 +14,12 @@ cask "letshare" do
     on_intel do
       url "https://github.com/MuhamedUsman/letshare/releases/download/v1.0.0/letshare_Darwin_x86_64.tar.gz",
         using: :homebrew_curl
-      sha256 "ed5a46f2690deb8a64ab3edbaf8290d8aa3926081bb972958c30a7f730f685d9"
+      sha256 "3da7d17c1e7fc84de0702006afdfecfe7bcf9340b8beb6e72cd9ae332487872f"
     end
     on_arm do
       url "https://github.com/MuhamedUsman/letshare/releases/download/v1.0.0/letshare_Darwin_arm64.tar.gz",
         using: :homebrew_curl
-      sha256 "aa17a8586c897018c0c7849e46bb716997216c77f70c857391686381a14eee6b"
+      sha256 "8bed45480b562617aa42f34e5c31c58c6444be3d2a3ed246801fd395477a36ac"
     end
   end
 
@@ -27,12 +27,12 @@ cask "letshare" do
     on_intel do
       url "https://github.com/MuhamedUsman/letshare/releases/download/v1.0.0/letshare_Linux_x86_64.tar.gz",
         using: :homebrew_curl
-      sha256 "d874d7a00af17953ddab3d4b44d803653a774ac5a774e7f941ed8802eca1f0a2"
+      sha256 "3ee0bb9af4d9413d05355fcbdb1f1e0c27e73522ac9d65eb5eaf3c1c81057edd"
     end
     on_arm do
       url "https://github.com/MuhamedUsman/letshare/releases/download/v1.0.0/letshare_Linux_arm64.tar.gz",
         using: :homebrew_curl
-      sha256 "e30e6180ce1ec68f7f829490215be23a5dac4e7d17dc250533612c333fb40017"
+      sha256 "02205f12342b09bd9d1894a86d4c7bfdaeb5fd569666212a56a03bf28b5fa5ec"
     end
   end
 

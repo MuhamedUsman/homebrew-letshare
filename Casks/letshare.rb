@@ -2,7 +2,7 @@
 cask "letshare" do
   desc "A TUI for sharing files over local network"
   homepage "https://github.com/MuhamedUsman/letshare"
-  version "1.0.0"
+  version "1.0.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,27 +12,27 @@ cask "letshare" do
 
   on_macos do
     on_intel do
-      url "https://github.com/MuhamedUsman/letshare/releases/download/v1.0.0/letshare_Darwin_x86_64.tar.gz",
+      url "https://github.com/MuhamedUsman/letshare/releases/download/v1.0.1/letshare_Darwin_x86_64.tar.gz",
         using: :homebrew_curl
-      sha256 "3da7d17c1e7fc84de0702006afdfecfe7bcf9340b8beb6e72cd9ae332487872f"
+      sha256 "c4187d9c52e7a37577f9b035b86ed9ce13bca5e181c0bfa7ba0bc720e892e715"
     end
     on_arm do
-      url "https://github.com/MuhamedUsman/letshare/releases/download/v1.0.0/letshare_Darwin_arm64.tar.gz",
+      url "https://github.com/MuhamedUsman/letshare/releases/download/v1.0.1/letshare_Darwin_arm64.tar.gz",
         using: :homebrew_curl
-      sha256 "8bed45480b562617aa42f34e5c31c58c6444be3d2a3ed246801fd395477a36ac"
+      sha256 "67001cd4875429f91a6b13d932c23953f6125522f54cf3a97ecf04cfe7cb3472"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MuhamedUsman/letshare/releases/download/v1.0.0/letshare_Linux_x86_64.tar.gz",
+      url "https://github.com/MuhamedUsman/letshare/releases/download/v1.0.1/letshare_Linux_x86_64.tar.gz",
         using: :homebrew_curl
-      sha256 "3ee0bb9af4d9413d05355fcbdb1f1e0c27e73522ac9d65eb5eaf3c1c81057edd"
+      sha256 "962f077282e82bbb2ba8e1af71e37e7d826f1ea9d08c826ca4defa53e856c47d"
     end
     on_arm do
-      url "https://github.com/MuhamedUsman/letshare/releases/download/v1.0.0/letshare_Linux_arm64.tar.gz",
+      url "https://github.com/MuhamedUsman/letshare/releases/download/v1.0.1/letshare_Linux_arm64.tar.gz",
         using: :homebrew_curl
-      sha256 "02205f12342b09bd9d1894a86d4c7bfdaeb5fd569666212a56a03bf28b5fa5ec"
+      sha256 "d53530936d923825ee1932598300cf2faad916b93005b9abe071f585aeaf96a8"
     end
   end
 
@@ -44,8 +44,10 @@ cask "letshare" do
 
   caveats do
     "This application requires:"
-    "1. Administrator privileges to bind to port 80"
-    "2. This application uses mDNS for automatic network discovery & publishing"
+    "1. Administrator privileges to bind to port 80 (run with 'sudo letshare' if needed)"
+    "2. mDNS support for automatic network discovery"
+    ""
+    "For setup help, see: https://github.com/MuhamedUsman/letshare#installation"
   end
 
   # No zap stanza required
